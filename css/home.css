@@ -1,0 +1,27 @@
+@charset "UTF-8";
+body {
+  height: 100vh;
+  overflow-y: hidden; }
+
+header {
+  box-shadow: none; }
+
+.bannerArea ul li {
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh; }
+  .bannerArea ul li img {
+    display: none; }
+  .bannerArea ul li .Txt {
+    position: absolute;
+    left: 105px;
+    bottom: 125px;
+    font-family: 'Roboto', "微軟正黑體",sans-serif;
+    color: #fff; }
+    .bannerArea ul li .Txt p {
+      font-size: 30px;
+      font-weight: normal; }
+    .bannerArea ul li .Txt p.title {
+      font-size: 200px;
+      font-weight: bold; }

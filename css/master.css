@@ -1,0 +1,139 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+@import url(awesomefont4.4/css/font-awesome.min.css);
+@import url(rwdgrid.css);
+* {
+  padding: 0;
+  margin: 0;
+  position: relative; }
+
+a {
+  text-decoration: none; }
+
+em {
+  font-style: normal; }
+
+ul {
+  list-style: none; }
+
+.b-box {
+  box-sizing: border-box; }
+
+a.goTop {
+  display: block;
+  background: #222222;
+  padding: 20px 0;
+  text-align: center;
+  cursor: pointer; }
+  a.goTop:hover {
+    background: #f2a59f; }
+  a.goTop i {
+    width: 18px;
+    height: 13px;
+    display: inline-block;
+    background: url(../images/top.png); }
+
+body {
+  background: #fff;
+  font-size: 13px;
+  font-family: Arial,"微軟正黑體", Helvetica, sans-serif; }
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+.outerwrap {
+  padding-left: 295px; }
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 295px;
+  z-index: 99;
+  padding: 85px 0 0 0;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1); }
+  header h1 {
+    width: 231px;
+    margin: 0 auto; }
+    header h1 a {
+      height: 107px;
+      display: block;
+      background: url(../images/logo.png); }
+  header .downBox {
+    padding: 0 33px;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0; }
+    header .downBox span {
+      display: block;
+      font-family: 'Roboto', "微軟正黑體",sans-serif;
+      color: #111;
+      font-weight: bold;
+      font-size: 16px;
+      padding: 25px;
+      border: 1px solid #f2a59f; }
+      header .downBox span:after {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        right: 5px;
+        bottom: 5px;
+        border: 2px solid #f2a59f; }
+      header .downBox span p {
+        padding: 5px 0; }
+    header .downBox a {
+      display: block;
+      margin: 8px 0 8px 23px;
+      color: #666666; }
+      header .downBox a i {
+        color: #f2a59f;
+        font-size: 18px;
+        margin-right: 15px;
+        display: inline-block;
+        vertical-align: middle; }
+        header .downBox a i.phone {
+          font-size: 35px; }
+
+nav {
+  padding: 90px 35px 0 35px; }
+  nav span {
+    font-size: 26px;
+    font-family: 'Roboto', "微軟正黑體",sans-serif;
+    color: #111;
+    font-weight: bold;
+    display: block;
+    padding: 0 0 15px 10px;
+    border-bottom: 1px solid #cccccc; }
+  nav a {
+    display: block;
+    padding: 20px 0;
+    color: #111;
+    font-size: 16px;
+    padding-left: 10px; }
+    nav a em {
+      display: inline-block;
+      width: 75px;
+      font-family: 'Roboto', "微軟正黑體",sans-serif;
+      font-weight: bold;
+      font-size: 24px;
+      margin-right: 24px; }
+    nav a:hover, nav a.current {
+      color: #f2a59f; }
+    nav a:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 52%;
+      width: 0;
+      height: 2px;
+      background: #f2a59f;
+      transition: all 0.3s ease; }
+    nav a:hover:after, nav a.current:after {
+      width: 100%; }

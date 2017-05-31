@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lin Kuanyin's portfolio</title>
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+</head>
+<body>
+    <div class="outerwrap clearfix"><!--outerwrap-->
+        <header class="b-box">
+            <h1><a href=""></a></h1>
+            <nav>
+                <span>MENU</span>
+                <a href="" class="current"><em>HOME</em>首頁</a>
+                <a href="about/index.html"><em>ABOUT</em>關於我</a>
+                <a href="work/index.html"><em>WORK</em>設計作品</a>
+            </nav>
+            <div class="downBox">
+                <span>
+                    <p>Lin Kuanyin's portfolio.</p>
+                    <p>I’m a Visual Designer.</p>
+                </span>
+                <a ><i class="phone fa fa-mobile" aria-hidden="true"></i>+886-912-587-766</a>
+                <a href="mailto:becky810210@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i>becky810210@gmail.com</a>
+            </div>
+        </header>
+        <section class="bannerArea">
+            <ul>
+                <li style="background-image:url(images/home_banner.jpg);">
+                    <img src="images/home_banner.jpg"/>
+                    <div class="Txt">
+                        <p class="title">Hello.</p>
+                        <p>Lin Kuanyin's portfolio. I’m a Visual Designer.</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </div><!--outerwrap end-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="javascripts/scrollreveal.js"></script>
+<script>
+$(function(){
+  window.sr = ScrollReveal({mobile:false, scale:1, duration:800, easing:'ease-in-out'});
+  
+  // Add class to <html> if ScrollReveal is supported
+  if (sr.isSupported()) {
+    document.documentElement.classList.add('sr');
+  }
+});
+</script>
+<!--scroll Reaveal-->
+<script>
+    $(document).ready(function () {
+        sr.reveal('.bannerArea ul li .Txt p',{origin:'bottom', distance:'20px', delay:0, viewFactor:0.2});
+		sr.reveal('.bannerArea ul li .Txt p.title',{origin:'top', distance:'20px', delay:0, viewFactor:0.2});
+    });
+</script>
+
+</body>
+</html>
