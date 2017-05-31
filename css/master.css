@@ -137,3 +137,25 @@ nav {
       transition: all 0.3s ease; }
     nav a:hover:after, nav a.current:after {
       width: 100%; }
+
+@media (max-width: 1530px){
+  nav{
+    padding: 90px 20px 0 20px;
+  }
+}
+@media (max-height: 770px){
+  header{
+    width: 275px;
+    padding: 40px 0 0 0;
+  }
+  .outerwrap{
+    padding-left: 275px;
+  }
+  header .downBox{
+    padding: 0 20px;
+  }
+  nav{
+    padding: 40px 20px 0 20px;
+  }
+
+}

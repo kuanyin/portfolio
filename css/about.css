@@ -315,3 +315,23 @@ article {
 
 .language {
   padding: 0; }
+@media (max-width: 1530px){
+  .wrap{
+    width: 100%;
+    padding: 0 20px;
+  }
+  .intro .imgBox{
+    right: 20px;
+  }
+  article section.box.myintro img{
+    left: -15px;
+  }
+}
+@media (max-width: 1245px){
+  .intro .imgBox img{
+    width: 350px;
+  }
+  .intro h2 strong{
+    font-size: 75px;
+  }
+}
