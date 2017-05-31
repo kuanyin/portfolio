@@ -280,12 +280,12 @@ section.style {
     color: #fff;
     margin-bottom: 70px; }
   section.style .left {
-    padding: 0 0 0 40px; }
+    padding: 0 160px 0 40px; }
     section.style .left ul {
       margin: 0 -23px; }
       section.style .left ul li {
         display: inline-block;
-        float: left;
+        float: right;
         width: 167px;
         margin: 0 23px 38px 23px; }
         section.style .left ul li:after {
