@@ -285,7 +285,7 @@ section.style {
       margin: 0 -23px; }
       section.style .left ul li {
         display: inline-block;
-        float: left;
+        float: right;
         width: 167px;
         margin: 0 23px 38px 23px; }
         section.style .left ul li:after {
