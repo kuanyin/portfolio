@@ -195,12 +195,12 @@ section.style {
     color: #000;
     margin-bottom: 70px; }
   section.style .left {
-    padding: 0 160px 0 40px; }
+    padding: 0 0 0 40px; }
     section.style .left ul {
       margin: 0 -23px; }
       section.style .left ul li {
         display: inline-block;
-        float: right;
+        float: left;
         width: 167px;
         margin: 0 23px 38px 23px; }
         section.style .left ul li:after {
@@ -211,6 +211,9 @@ section.style {
           top: 0;
           bottom: 0;
           border: 1px solid #ccc; }
+          section.style .left ul li.opacity:after{
+            display: none;
+          }
         section.style .left ul li .color {
           height: 166px; }
           section.style .left ul li .color.blue {
@@ -254,7 +257,8 @@ section.style {
 section.rwd {
   padding: 150px 0; }
   section.rwd .left {
-    padding: 95px 0 0 64px; }
+    float: right;
+    padding: 95px 0 80px 64px; }
     section.rwd .left h3 {
       font-family: 'Raleway', sans-serif; }
       section.rwd .left h3 strong {
@@ -266,18 +270,31 @@ section.rwd {
         font-size: 80px;
         font-weight: 600;
         display: inline-block;
-        padding-right: 143px; }
+         }
     section.rwd .left p {
       font-size: 15px;
       color: #111;
       line-height: 1.8;
       margin-top: 64px;
       padding-right: 230px; }
-  section.rwd .Img {
-    padding: 0; }
-    section.rwd .Img img {
-      width: 100%;
-      display: block; }
+section.rwd .ImgBox{
+  position: static;
+	padding: 0;
+	float: left;}
+section.rwd .ImgBox .Img{
+	position: absolute;
+    overflow: hidden;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+}
+section.rwd .ImgBox .Img img{
+	display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    -o-object-fit: cover;
+}
 
 .website {
   padding: 0 0 130px 0; }
@@ -301,3 +318,198 @@ section.rwd {
   .website img {
     display: block;
     width: 100%; }
+@media (max-width: 1700px){
+  .wrap{
+    width: 100%;
+    padding: 0 50px;
+  }
+  section.design .wrap {
+      padding: 0 50px 130px 50px;
+  }
+  section.style .wrap {
+    padding: 130px 50px 142px 50px;
+}
+  span.num{
+    left: 20px;}
+  .intro .website span.num{
+    left: -100px;
+  }
+  section.rwd .left{
+    padding: 25px 0 80px 40px;}
+  section.rwd .left p{
+    padding-right: 50px;
+  }
+  section.style .right ul li span.big en,
+  section.style .right ul li span.big,
+  section.style .right ul li span.big.two{
+    font-size: 25px;}
+  section.rwd .left h3 strong {
+      font-size: 60px;
+      }
+    section.rwd .left h3 em {
+      font-size: 40px;
+      }
+}
+@media (max-width: 1700px) and (min-width:1180px){
+  section.style .right ul li span.small{
+    margin-right: 15px;
+    width: 147px;
+  }
+  
+}
+@media (max-width: 1320px) and (min-width:1180px){
+  section.style .left,
+  section.rwd .leftBox{
+    padding: 0;
+  }
+  section.style .left ul li{
+    margin: 0 10px 38px 10px;
+  }
+  section.style .right ul li span.small{
+    margin-right: 15px;
+    width: 147px;
+  }
+  .intro{
+    padding: 70px 0 420px 0;}
+  section.design img{
+    margin-top: -375px;
+  }
+}
+@media (max-width: 1460px) and (min-width:1180px){
+}
+@media (max-width: 1180px){
+  .wrap{
+    padding: 0 20px;
+  }
+  section.design .wrap {
+      padding: 0 20px 130px 20px;
+  }
+  section.style .wrap {
+    padding: 130px 20px 142px 20px;
+}
+  span.num{
+    display: none;
+  }
+  section.design .right{
+    padding: 50px 0 0 0;
+  }
+  section.design .left,
+  section.style .left{
+    padding: 0;}
+  section.design img{
+    margin-top: -155px;
+  }
+  .intro{
+    padding: 70px 0 200px 0;
+  }
+}
+@media (max-width: 1024px){
+
+  section.style .left ul li.opacity{
+    display: none;
+  }
+  img.tablet{
+    width: 65%;
+    right: 0;
+    bottom: 45px;
+  }
+}
+@media (max-width: 767px){
+  .intro h2 strong{
+    font-size: 35px;
+  }
+  section.design h3{
+    font-size: 35px;
+  }
+  .intro .infoBox .right{
+    margin-top: 40px;
+    text-align: left;
+  }
+  section.rwd{
+    padding: 0 0 50px 0;
+  }
+  section.rwd h3 strong {
+      font-size: 60px;
+      }
+    section.rwd h3 em {
+      font-size: 40px;
+      }
+    section.rwd .ImgBox{
+      float: none;
+    }
+    section.rwd .ImgBox .Img{
+      width: 100%;
+      position: static;
+    }
+    section.rwd .left {
+      float: none;
+      padding: 60px 20px 0 20px;
+  }
+  section.rwd .left p{
+    padding: 0;
+  }
+
+}
+@media (max-width: 650px){
+   section.style .left{
+     margin: 0 0 40px 0;}
+  section.style .left ul{
+    margin: 0;
+  }
+  section.style .left ul li{
+    width: 140px;
+    margin: 0 10px 40px 10px;
+  }
+  section.style .left ul li .color{
+    height: 140px;
+  }
+  section.style p.title{
+    margin-bottom: 40px;
+  }
+  section.rwd h3 em{
+    padding-right: 0;
+  }
+  section.rwd h3 em:after{
+    display: none;
+  }
+section.style:after{
+  font-size: 150px;}
+
+}
+@media (max-width: 520px){
+ 
+  section.design .wrap {
+    padding: 80px 20px 80px 20px;
+}
+  section.style .right ul li span.small{
+    margin-right: 15px;
+    width: 147px;
+  }
+  
+}
+@media (max-width: 400px){
+  section.style .right ul li{
+    line-height: 1.8;
+    height: auto;
+    padding: 20px 0;
+  }
+  section.style .right ul li span.big{
+    display: block;
+    margin: 10px 0 0 15px;}
+    section.style .right ul li span.small{
+      margin: 0;
+      width: auto;
+    }
+    section.style .left ul li{
+      width: 120px;
+      margin: 0 10px 40px 10px;
+    }
+    section.style .left ul li .color{
+      height: 120px;
+    }
+    section.rwd .left h3 strong {
+      font-size: 50px;
+    }
+    .intro h2 em{
+      font-size: 45px;}
+}

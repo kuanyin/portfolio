@@ -280,12 +280,12 @@ section.style {
     color: #fff;
     margin-bottom: 70px; }
   section.style .left {
-    padding: 0 160px 0 40px; }
+    padding: 0 0 0 40px; }
     section.style .left ul {
       margin: 0 -23px; }
       section.style .left ul li {
         display: inline-block;
-        float: right;
+        float: left;
         width: 167px;
         margin: 0 23px 38px 23px; }
         section.style .left ul li:after {
@@ -296,6 +296,9 @@ section.style {
           top: 0;
           bottom: 0;
           border: 1px solid #636468; }
+          section.style .left ul li.opacity:after{
+            display: none;
+          }
         section.style .left ul li .color {
           height: 166px; }
           section.style .left ul li .color.blue {
@@ -310,6 +313,8 @@ section.style {
           text-align: center;
           font-weight: bold;
           padding: 7px 0 12px 0; }
+          section.style .right{
+            padding: 0;}
   section.style .right ul {
     margin-top: -36px; }
     section.style .right ul li {
@@ -342,6 +347,7 @@ section.style {
           font-family: 'Crimson Text', serif; }
 
 section.rwd {
+  overflow: hidden;
   padding: 150px 0 150px 0; }
   section.rwd h3 {
     font-family: 'Raleway', sans-serif; }
@@ -408,3 +414,201 @@ img.pic {
   left: 50%;
   bottom: 0;
   margin-left: -300px; }
+@media (max-width: 1700px){
+  .wrap{
+    width: 100%;
+    padding: 0 50px 0 120px;
+  }
+  section.design .wrap {
+      padding: 140px 50px 130px 120px;
+  }
+  section.style .wrap {
+    padding: 130px 50px 142px 120px;
+}
+  span.num{
+    left: 20px;}
+  .intro .website span.num{
+    left: -100px;
+  }
+  
+  img.tablet{
+    right: -100px;
+  }
+  section.rwd .Img{
+    z-index: 2;
+    margin-left: -100px;
+  }
+  section.style .right ul li span.big en,
+  section.style .right ul li span.big{
+    font-size: 28px;}
+}
+@media (max-width: 1700px) and (min-width:1180px){
+  section.style .right ul li span.small{
+    margin-right: 15px;
+    width: 147px;
+  }
+}
+@media (max-width: 1320px) and (min-width:1180px){
+  section.style .left,
+  section.rwd .leftBox{
+    padding: 0;
+  }
+  section.style .left ul li{
+    margin: 0 10px 38px 10px;
+  }
+  section.style .right ul li span.small{
+    margin-right: 15px;
+    width: 147px;
+  }
+  
+}
+@media (max-width: 1460px) and (min-width:1180px){
+  img.tablet{
+    right: -300px;
+  }
+  section.rwd .leftBox .left{
+    padding: 0;
+  }
+}
+@media (max-width: 1180px){
+  .wrap{
+    padding: 0 20px;
+  }
+  section.design .wrap {
+      padding: 140px 20px 130px 20px;
+  }
+  section.style .wrap {
+    padding: 130px 20px 142px 20px;
+}
+  span.num{
+    display: none;
+  }
+  section.design .right{
+    padding: 50px 0 0 0;
+  }
+  section.design .left,
+  section.style .left,
+  section.rwd .leftBox{
+    padding: 0;}
+  img.tablet{
+    right: -200px;
+  }
+  section.style .right ul li span.big{
+    font-size: 40px;
+  }
+}
+@media (max-width: 1024px){
+  .intro .infoBox .right .icon,
+  img.leaf,img.pic{
+    display: none;
+  }
+  section.rwd .leftBox .left{
+    padding: 0;}
+  section.style .left ul li.opacity{
+    display: none;
+  }
+  img.tablet{
+    width: 65%;
+    right: 0;
+    bottom: 45px;
+  }
+  section.rwd .Img{
+     margin-left: -20px;}
+  section.rwd .Img img{
+   
+    width: 45%;
+  }
+  section.rwd .Img{
+    padding-top: 200px;}
+}
+@media (max-width: 767px){
+  .intro h2 strong{
+    font-size: 54px;
+  }
+  .intro .infoBox .right{
+    margin-top: 40px;
+    text-align: left;
+  }
+  section.rwd h3 strong {
+      font-size: 60px;
+      }
+    section.rwd h3 em {
+      font-size: 40px;
+      }
+
+}
+@media (max-width: 650px){
+   section.style .left{
+     margin: 0 0 40px 0;}
+  section.style .left ul{
+    margin: 0;
+  }
+  section.style .left ul li{
+    width: 140px;
+    margin: 0 10px 40px 10px;
+  }
+  section.style .left ul li .color{
+    height: 140px;
+  }
+  section.style p.title{
+    margin-bottom: 40px;
+  }
+  section.rwd h3 em{
+    padding-right: 0;
+  }
+  section.rwd h3 em:after{
+    display: none;
+  }
+  img.tablet{
+    bottom: 45px;
+  }
+  section.rwd{
+    padding: 80px 0;
+  }
+  section.rwd .Img {
+    padding-top: 150px;
+}
+section.style:after{
+  font-size: 150px;}
+
+}
+@media (max-width: 520px){
+ 
+  section.design .wrap {
+    padding: 80px 20px 80px 20px;
+}
+  section.style .right ul li span.small{
+    margin-right: 15px;
+    width: 147px;
+  }
+  section.style .right ul li span.big{
+    font-size: 30px;
+  }
+  
+}
+@media (max-width: 400px){
+  section.style .right ul li{
+    line-height: 1.8;
+    height: auto;
+    padding: 20px 0;
+  }
+  section.style .right ul li span.big{
+    display: block;
+    margin: 10px 0 0 15px;}
+    section.style .right ul li span.small{
+      margin: 0;
+      width: auto;
+    }
+    section.style .left ul li{
+      width: 120px;
+      margin: 0 10px 40px 10px;
+    }
+    section.style .left ul li .color{
+      height: 120px;
+    }
+    section.rwd h3 strong{
+      font-size: 50px;
+    }
+    .intro h2 em{
+      font-size: 45px;}
+}

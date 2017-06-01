@@ -66,3 +66,32 @@ ul.work li {
   ul.work li:hover .Txt {
     opacity: 1;
     margin-top: 0; }
+@media (max-width:1600px){
+  ul.work li .Txt h3 em{
+    font-size: 35px;
+  }
+  ul.work li .Txt h3 em b{
+    font-size: 25px;
+  }
+}
+@media (max-width:1300px){
+  ul.work li .Txt h3 em{
+    font-size: 30px;
+  }
+  ul.work li .Txt h3 em b{
+    font-size: 20px;
+  }
+}
+@media (max-width:1180px){
+  ul.work li .Txt{
+    opacity: 1;
+     margin-top: 0; 
+  }
+  ul.work li .Img img{
+    height: auto;
+  }
+   ul.work li img {
+    opacity: 0.2; }
+  ul.work li .Img:after {
+    opacity: 1; }
+}

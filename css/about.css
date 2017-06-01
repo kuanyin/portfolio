@@ -257,7 +257,7 @@ article {
 .skillBox ul.skill {
   margin: 5px 0 50px 0; }
   .skillBox ul.skill li {
-    padding: 0 0 0 40px;
+    padding: 0 20px 0 40px;
     font-family: 'Raleway', sans-serif;
     font-weight: bold; }
     .skillBox ul.skill li:after {
@@ -323,8 +323,42 @@ article {
   .intro .imgBox{
     right: 20px;
   }
+  
+}
+@media (max-width: 1530px) and (min-width: 1180px){
   article section.box.myintro img{
     left: -15px;
+  }
+  .specialBox ul li .Img,
+  .hobbyBox ul li .Img{
+    width: 140px;
+    height: 140px;
+  }
+  .specialBox ul li{
+    padding: 0 5px;
+  }
+  .hobbyBox ul li {
+    padding: 24px 5px;
+}
+}
+@media (max-width: 1430px) and (min-width: 1180px){
+  article section.box{
+    padding: 40px 20px;
+  }
+  article section.box h3 strong:before{
+    left: -20px;
+  }
+  .specialBox ul li .Img,
+  .hobbyBox ul li .Img{
+    width: 100%;
+  }
+  .software ul li span.circle i, .language ul li span.circle i{
+    margin: 0 5px;
+  }
+}
+@media (max-width: 1280px) and (min-width: 1180px){
+  .software ul li span.circle i, .language ul li span.circle i{
+    margin: 0 2px;
   }
 }
 @media (max-width: 1245px){
@@ -333,5 +367,147 @@ article {
   }
   .intro h2 strong{
     font-size: 75px;
+  }
+}
+@media (max-width: 1180px){
+  article section.box.myintro img{
+    left: -20px;
+  }
+  .hobbyBox ul li .Img,
+  .specialBox ul li .Img{
+    margin: 0 auto;
+  }
+}
+@media (max-width: 1180px) and (min-width: 1024px){
+  .hobbyBox ul li .Img,
+  .specialBox ul li .Img{
+    width: 130px;
+    height: 130px;
+  }
+  .software ul li span.circle i, .language ul li span.circle i{
+    margin: 0 3px;
+  }
+  
+}
+@media (max-width: 1024px){
+  article .leftBox,
+  article .rightBox{
+    padding: 0;
+  }
+}
+@media (max-width: 880px){
+  .intro .imgBox img {
+    width: 250px;
+}
+  .intro .imgBox{
+    padding-left: 120px;
+  }
+  .intro .imgBox p:before{
+    width: 180px;
+  }
+}
+@media (max-width: 725px){
+  .intro .imgBox img {
+    width: 200px;
+}
+  .intro .imgBox{
+    padding-left: 120px;
+  }
+  .intro .imgBox p:before{
+    width: 180px;
+  }
+}
+@media (max-width: 670px){
+  .intro .imgBox{
+    margin-top: 40px;
+    position: static;
+    text-align: right;
+  }
+  .intro .imgBox p{
+    right: 250px;
+    left: auto;
+  }
+}
+@media (max-width: 640px){
+  .intro h2 strong{
+    font-size: 60px;
+  }
+  .intro h2 em{
+    font-size: 23px;
+  }
+  .intro h3{
+    font-size: 25px;
+  }
+  .specialBox ul li,
+  .hobbyBox ul li{
+    padding: 10px 0;
+  }
+  .software ul li span.circle i, .language ul li span.circle i{
+    margin: 0 3px;
+  }
+}
+@media (max-width: 530px){
+  .software ul li span.circle, .language ul li span.circle{
+    display: block;
+    float: none;
+    padding-top: 15px;
+  }
+  .software ul li span.circle i, .language ul li span.circle i{
+    margin: 0 5px;
+  }
+}
+@media (max-width: 480px){
+    .intro h2 em{
+      display: block;
+      margin-left: 0;
+    }
+    .intro p.title{
+      margin-bottom: 40px;
+    }
+    article section.box.myintro img{
+      left: -10px;
+      width: 100%;
+    }
+    article section.box{
+      padding: 40px 20px;
+    }
+    article section.box h3 strong:before{
+      left: -20px;
+    }
+    article ul.year{
+      padding-left: 0;
+    }
+}
+@media (max-width: 400px){
+  .intro{
+    padding: 75px 0;
+  }
+  .intro ul li .box{
+    padding-left: 20px;
+  }
+  .intro .imgBox{
+    text-align: center;
+    padding-left: 0;
+  }
+  .intro .imgBox p{
+    position: static;
+  }
+  .intro .imgBox p:before{
+    display: none;
+  }
+  .specialBox ul li, .hobbyBox ul li{
+    padding: 10px 0;
+    width: 100%;
+  }
+  
+}
+@media (max-width: 350px){
+  .software ul li span.circle i, .language ul li span.circle i{
+    width: 12px;
+    height: 12px;
+    margin: 0 3px;
+  }
+  article section.box h3{
+    font-size: 23px;
   }
 }

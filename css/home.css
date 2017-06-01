@@ -34,3 +34,16 @@ header {
     bottom: 100px;
   }
 }
+@media (max-width:687px){
+  .bannerArea ul li .Txt{
+    left: 20px;
+    bottom: 200px;
+  }
+}
+@media (max-width:480px){
+  .bannerArea ul li .Txt p.title {
+      font-size: 100px;
+  }
+  .bannerArea ul li .Txt p {
+    font-size: 20px;}
+}
